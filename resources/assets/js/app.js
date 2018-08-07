@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -24,5 +23,5 @@ Vue.component('league-table-component', require('./components/LeagueTableCompone
 Vue.component('weekly-match-component', require('./components/WeeklyMatchComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+  el: '#app'
 });

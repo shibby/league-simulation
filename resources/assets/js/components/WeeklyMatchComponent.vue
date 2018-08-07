@@ -93,7 +93,8 @@
       <button class="btn btn-info" v-bind:disabled="!(week > 1)" @click.prevent="goToPreviousWeek()">
         <- Go To Prev Week
       </button>
-      <button class="btn btn-info" v-bind:disabled="!(weekHasBeenPlayed && haveNextWeek)" @click.prevent="goToNextWeek()">Go To
+      <button class="btn btn-info" v-bind:disabled="!(weekHasBeenPlayed && haveNextWeek)"
+              @click.prevent="goToNextWeek()">Go To
         Next Week ->
       </button>
     </div>
