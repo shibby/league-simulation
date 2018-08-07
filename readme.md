@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/shibby/league-simulation.svg?branch=master)](https://travis-ci.com/shibby/league-simulation)
+
 ## Installation
 
 Copy&fill environment file
