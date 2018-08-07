@@ -9,6 +9,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 class MatchPlayedEvent
 {
     use Dispatchable, SerializesModels;
+
     /**
      * @var Match
      */
