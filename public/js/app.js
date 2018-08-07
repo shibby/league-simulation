@@ -13999,8 +13999,7 @@ module.exports = __webpack_require__(49);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_resource__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins_eventbus__ = __webpack_require__(59);
-
-/**
+"/**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
@@ -14031,7 +14030,6 @@ var app = new Vue({
 /***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
-
 
 window._ = __webpack_require__(15);
 window.Popper = __webpack_require__(3).default;

@@ -1,0 +1,33 @@
+language: php
+
+git:
+  submodules: false
+
+php:
+  - '7.2'
+
+services:
+  - mysql
+
+cache:
+  directories:
+    - $HOME/.composer
+
+before_script:
+  # Remove xdebug for performance issues
+  - phpenv config-rm xdebug.ini
+  # Required packages
+  - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
+  # Database
+  - mysql -e 'create database IF NOT EXISTS homestead' -uroot
+
+  - cp .env.example .env
+  - composer self-update
+  - composer install --no-interaction
+#  - yarn
+#  - yarn prod
+  - php artisan key:generate
+  - php artisan migrate --seed --force
+
+script:
+  - vendor/bin/phpunit --coverage-text
